@@ -1,0 +1,29 @@
+// styles/Dropdown.scss
+.dropdown {
+    .dropdown-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FF6060;
+    color: white;
+    border: none;
+    font-family: 'Montserrat';
+    width: 100%;
+    text-align: left;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    height: 52px;
+    
+    .arrow {
+      float: right;
+    }
+
+    .open {
+      transform: rotate(180deg);
+    }
+  }
+}

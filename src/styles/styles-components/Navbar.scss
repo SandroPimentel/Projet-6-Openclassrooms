@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    width: 100%;
+    margin-top: 45px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 57px;
+}
+
+a {
+    text-decoration: none;
+    color: #FF6060;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.active {
+    text-decoration-line: underline;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    nav {
+        max-width: 335px;
+    }
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    ul {
+        gap: 26px;
+    }
+}
