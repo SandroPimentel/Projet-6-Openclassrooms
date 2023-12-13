@@ -30,22 +30,23 @@ const PropertyDetailPage = () => {
     <div className="property-detail-page">
       <Carousel pictures={property.pictures} />
       <div className="property-information">
-        <div className="title-and-host">
+        <div className="title-and-tags">
           <h1 className="property-title">{property.title}</h1>
+          <h2 className='property-location'>{property.location}</h2>
+          <div className="property-tags">
+          {property.tags.map((tag, index) => <span key={index} className="tag">{tag}</span>)}
+          </div>
+        </div>
+        <div className="property-host-and-rating">
           <div className="host-info">
             <div className="host-name">{property.host.name}</div>
             <img src={property.host.picture} alt={`Host ${property.host.name}`} className="host-picture" />
           </div>
-        </div>
-        <h2 className='property-location'>{property.location}</h2>
-        <div className="property-tags-and-rating">
-          <div className="property-tags">
-          {property.tags.map((tag, index) => <span key={index} className="tag">{tag}</span>)}
-          </div>
           <div className="property-rating">
-          {generateRating(Number(property.rating))}
+            {generateRating(Number(property.rating))}
           </div>
         </div>
+      </div>
       <div className="detail-page-dropdown">
         <Dropdown title="Description" customClass="description-dropdown">
           <p>{property.description}</p>
@@ -57,7 +58,6 @@ const PropertyDetailPage = () => {
             ))}
           </ul>
         </Dropdown>
-      </div>
       </div>
     </div>
   )

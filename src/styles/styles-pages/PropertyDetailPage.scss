@@ -1,83 +1,43 @@
 .property-information {
     color: #FF6060;
     font-family: 'Montserrat';
-
+    display: flex;
+    justify-content: space-between;
     p {
         color: #FF6060;
     }
 }
 
-.title-and-host {
+
+.title-and-tags {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    flex-direction: column;
 
-.title-and-host h1 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-top: 25px;
-    color: #FF6060;
-}
+    h1 {
+        font-size: 36px;
+        font-weight: 500;
+        margin-top: 25px;
+        color: #FF6060;
+    }
 
-.host-info {
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 24px;
-}
-
-.host-picture {
-    height: 64px;
-    width: 64px;
-    border-radius: 90px;
-}
-
-.host-name {
-    text-align: right;
-    width: 93px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.property-location {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: -25px;
-}
-
-.property-tags-and-rating {
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-
-    .property-rating {
-        width: 196px;
-        height: 36px;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-
-        img {
-            width: 20%;
-        }
+    .property-location {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: -15px;
     }
 
     .property-tags {
         display: flex;
         flex-direction: row;
         gap: 10px;
+        margin-top: 10px;
 
         .tag {
             min-width: 95px;
             padding-left: 10px;
             padding-right: 10px;
             height: 25px;
-            border-radius: 10px;
+            border-radius: 5px;
             background: #FF6060;
             display: flex;
             align-items: center;
@@ -88,6 +48,44 @@
     }
 }
 
+.property-host-and-rating {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    .host-info {
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 24px;
+    }
+    
+    .host-picture {
+        height: 64px;
+        width: 64px;
+        border-radius: 90px;
+    }
+    
+    .host-name {
+        text-align: right;
+        width: 93px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .property-rating {
+        width: 196px;
+        height: 36px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+    
+        img {
+            width: 20%;
+        }
+    }
+}
 .detail-page-dropdown {
     max-width: 1240px;
     display: flex;
@@ -135,87 +133,83 @@ div.dropdown.equipements-dropdown {
         max-width: 335px;
     }
 
-    .title-and-host h1 {
-        font-weight: 500;
-        margin-top: 15px;
-        color: #FF6060;
-        min-width: 335px;
-        width: 335px;
-        height: 46px;
-        flex-shrink: 0;
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-    .property-location {
-        font-size: 14px;
-        font-weight: 500;
-        margin-top: -15px;
-    }
-
-    .property-tags-and-rating {
+    .property-information {
         display: flex;
         flex-direction: column;
-        display: flex;
-        gap: 20px;
+    }
 
+    .title-and-tags {
+        display: flex;
+        flex-direction: column;
+    
+        h1 {
+            font-size: 18px;
+            margin-top: 15px;
+            color: #FF6060;
+            min-width: 335px;
+        }
+    
+        .property-location {
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 0px;
+        }
+    
+        .property-tags {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 0px;
+    
+            .tag {
+                min-width: 64px;
+                height: 18px;
+                border-radius: 5px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .property-host-and-rating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .host-info {
+            font-size: 12px;
+            font-weight: 500;
+            margin: 0px;
+        }
+        
+        .host-picture {
+            height: 32px;
+            width: 32px;
+            border-radius: 90px;
+        }
+        
+        .host-name {
+            text-align: right;
+            width: 93px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
         .property-rating {
             width: 98px;
             height: 18px;
             flex-shrink: 0;
             display: flex;
             justify-content: center;
-    
+        
             img {
                 width: 20%;
             }
         }
-    
-        .property-tags {
-    
-            .tag {
-                min-width: 100px;
-                max-width: 100px;
-                padding-left: 0px;
-                padding-right: 0px;
-                height: 18px;
-                border-radius: 5px;
-                background: #FF6060;
-                display: flex;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                color: #FFF;
-                font-size: 10px;
-            }
-        }
     }
 
-    .host-info {
-        display: flex;
-        flex-direction: row;
-        font-size: 18px;
-        font-weight: 500;
-        margin-top: 24px;
-        position: absolute;
-        margin-top: 110px;
-        margin-left: 240px;
-    }
-
-    .host-picture {
-        height: 32px;
-        width: 32px;
-        border-radius: 90px;
-    }
-    
-    .host-name {
-        text-align: right;
-        width: 53px;
-        margin-right: 10px;
-        display: flex;
-        align-items: center;
-        font-size: 12px;
-    }
     .detail-page-dropdown {
         max-width: 1240px;
         display: flex;
@@ -224,7 +218,7 @@ div.dropdown.equipements-dropdown {
     div.dropdown.description-dropdown {
         max-width: 335px;
         min-width: 335px;
-        margin-top: 25px;
+        margin-top: 13px;
 
         button {
             height: 30px;
