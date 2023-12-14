@@ -26,3 +26,21 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+
+  .dropdown {
+    .dropdown-title {
+      font-size: 13px;
+      height: 30px;
+    }
+
+    .arrow {
+      height: 20px;
+    }
+  }
+
+  .dropdown-content {
+    font-size: 102px;
+  }
+}
