@@ -16,15 +16,15 @@ const PropertyDetailPage = () => {
   }
 
   const generateRating = (rating) => {
-    const totalStars = 5;
-    let stars = [];
+    const totalStars = 5
+    let stars = []
     for (let i = 0; i < totalStars; i++) {
       stars.push(
         i < rating ? <img key={i} src={StarFull} alt="Full star" /> : <img key={i} src={StarEmpty} alt="Empty star" />
-      );
+      )
     }
-    return stars;
-  };
+    return stars
+  }
 
   return (
     <div className="property-detail-page">

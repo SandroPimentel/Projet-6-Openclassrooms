@@ -1,12 +1,11 @@
-// components/Dropdown.js
 import React, { useState } from 'react'
 import '../styles/styles-components/Dropdown.scss'
 import arrowDown from '../assets/arrow-dropdown.svg'
 
 const Dropdown = ({ title, children, customClass }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const toggleDropdown = () => setIsOpen(!isOpen);
+  const toggleDropdown = () => setIsOpen(!isOpen)
 
   return (
     <div className={`dropdown ${customClass}`}>
@@ -20,7 +19,7 @@ const Dropdown = ({ title, children, customClass }) => {
       </button>
       {isOpen && <div className="dropdown-content">{children}</div>}
     </div>
-  );
-};
+  )
+}
 
-export default Dropdown;
+export default Dropdown

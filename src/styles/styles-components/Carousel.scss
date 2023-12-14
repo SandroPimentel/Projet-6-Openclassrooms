@@ -5,8 +5,6 @@
     position: relative;
     height: 415px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 50px;
   }
   
@@ -33,6 +31,17 @@
     object-fit: cover; 
   }
   
+  .carousel-counter {
+    position: absolute;
+    z-index: 20;
+    color: #FFF;
+    margin-left: 615px;
+    margin-top: 357px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+  }
   .carousel-arrows {
     position: absolute;
     top: 50%;
@@ -50,6 +59,7 @@
   
   .carousel-arrows {
     width: 1194px;
+    margin-left: 23px;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -61,8 +71,9 @@
   
   @media (max-width: 480px) {
     .carousel-arrows {
-      width: 325px;
+      width: 315px;
       height: 20px;
+      margin-left: 10px;
       position: absolute;
       display: flex;
       justify-content: space-between;
@@ -78,5 +89,9 @@
   .carousel-wrapper {
       width: 335px; 
       height: 255px; 
+  }
+
+  .carousel-counter {
+    display: none;
   }
 }
