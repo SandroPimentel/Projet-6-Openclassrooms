@@ -1,11 +1,9 @@
-.home-banner {
+.banner.home-banner {
     margin-top: 50px;
     margin-bottom: 43px;
 }
 
 .properties-section {
-    max-width: 1140px;
-    width: 100%;
     border-radius: 25px;
     background: #F6F6F6;
     display: flex;
@@ -15,20 +13,17 @@
 }
 
 
-
 @media (max-width: 480px) {
-        .banner.home-banner {
-            min-width: 319px;
-            max-width: 319px;
-            padding-left: 16px;
-        }
+    .banner.home-banner {
+        margin-top: 27px;
+        margin-bottom: 22px;
+    }
 
-        .properties-section {
-            max-width: 335px;
-            gap: 20px;
-            padding: 0px;
-            background: #FFF;
-            display: flex;
-            justify-content: center;
-        }
+    .properties-section {
+        gap: 20px;
+        padding: 0px;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+    }
 }

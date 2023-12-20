@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/styles-pages/HomePage.scss'
 import Banner from '../components/Banner'
 import homeBannerImage from '../assets/img-accueil.jpg'
-import { Link } from 'react-router-dom'
 import PropertyCard from '../components/PropertyCard'
 import properties from '../data/properties.json'
 

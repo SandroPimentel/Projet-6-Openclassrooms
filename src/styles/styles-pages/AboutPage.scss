@@ -1,46 +1,17 @@
-.about-banner {
-    margin-top: 50px;
-    margin-bottom: 8px;
+.banner.about-banner {
+    margin-top: 38px;
+    margin-bottom: 38px;
 }
-
 .about-dropdown {
-    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1240px;
     width: 100%;
-    margin-top: 30px;
 }
-
-.dropdown-content {
-    background-color: #F6F6F6;
-    padding: 20px;
-    max-width: 983px;
-    
-    p {
-    color: #FF6060;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0px;
-    }
-  }
 @media (max-width: 480px) {
-
-    .about-dropdown {
-        max-width: 335px;
-        width: 100%;
-        margin-top: 30px;
-
-        .dropdown-title {
-            font-size: 13px;
-        }
-    }
-
-    .dropdown-content p {
-        min-width: 295px;
-        font-size: 12px;
-        text-align: left;
-    }
-
-    .about-banner {
+    .banner.about-banner {
         margin-top: 19px;
-        margin-bottom: 0px;
+        margin-bottom: 19px;
     }
 }

@@ -17,7 +17,9 @@ const Dropdown = ({ title, children, customClass }) => {
           alt="Open/close dropdown"
         />
       </button>
-      {isOpen && <div className="dropdown-content">{children}</div>}
+      {isOpen && 
+        <div className="dropdown-content">{children}</div>
+      }
     </div>
   )
 }

@@ -1,4 +1,4 @@
-.dropdown {
+.dropdown {    
     .dropdown-title {
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,6 @@
     background-color: #FF6060;
     color: white;
     border: none;
-    font-family: 'Montserrat';
     width: 100%;
     text-align: left;
     color: #FFF;
@@ -25,22 +24,43 @@
       transform: rotate(180deg);
     }
   }
+
+      
+  .dropdown-content {
+    background-color: #F6F6F6;
+    padding: 16px;
+    
+    p {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    }
+  }
 }
 
 @media (max-width: 480px) {
 
-  .dropdown {
-    .dropdown-title {
-      font-size: 13px;
-      height: 30px;
+    .dropdown {    
+        .dropdown-title {
+        font-size: 13px;
+        height: 30px;
+        
+        .arrow {
+          height: 20px;
+        }
+      }
+    
+          
+      .dropdown-content {
+        padding: 13px;
+        
+        p {
+        font-size: 12px;
+        text-align: left;
+        }
+      }
     }
-
-    .arrow {
-      height: 20px;
-    }
-  }
-
-  .dropdown-content {
-    font-size: 102px;
-  }
 }
+
+

@@ -9,10 +9,10 @@ const Banner = ({ backgroundImage, heading, className}) => {
   }
 
   return (
-    <header className={`banner ${className}`} style={bannerStyle}>
+    <div className={`banner ${className}`} style={bannerStyle}>
       <div className='overlay'></div>
-      <h1 className="banner-heading">{heading}</h1>
-    </header>
+      <p className="banner-heading">{heading}</p>
+    </div>
   )
 }
 
